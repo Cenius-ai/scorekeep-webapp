@@ -1,0 +1,17 @@
+# Scorekeep script - 501, Alice v Bob, double-out.
+# In --file mode blank lines, '#' lines and trailing comments are ignored.
+# Run it with:
+#   python3 scorekeep.py --game 501 --players Alice,Bob --file examples/501-leg.darts
+
+T20 S20 S20       # Alice 100 -> 401
+S20 S20 T20       # Bob 100 -> 401
+T20 T20 S20       # Alice 140 -> 261
+T20 T20 S20       # Bob 140 -> 261
+S20 S20 S20       # Alice 60 -> 201
+S19 T20 S20       # Bob 99 -> 162
+board             # reprint the board without changing anything
+S20 S5 D3         # Alice 31 -> 170
+T20 T20 T20       # Bob 180 from 162 - a bust, Bob stays on 162
+checkout          # Alice asks for her route from 170
+T20 T20 BULL      # Alice finishes on the double bull
+averages          # per-leg and session three-dart averages

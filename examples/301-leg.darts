@@ -1,0 +1,12 @@
+# Scorekeep script - 301, Alice v Bob, double-out.
+# Run it with:
+#   python3 scorekeep.py --game 301 --players Alice,Bob --file examples/301-leg.darts
+
+T20 T20 S20       # Alice 140 -> 161
+T20 S20 S20       # Bob 100 -> 201
+T20 T20 S20       # Alice 140 -> 21
+S20 S20 S20       # Bob 60 -> 141
+board             # reprint the board without changing anything
+checkout          # Alice on 21 -> S5 D8
+S5 D8             # Alice finishes 21 on a double
+averages

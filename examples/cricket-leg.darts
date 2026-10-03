@@ -1,0 +1,21 @@
+# Scorekeep script - cricket, Alice v Bob (standard singles cricket).
+# Run it with:
+#   python3 scorekeep.py --game cricket --players Alice,Bob --file examples/cricket-leg.darts
+
+T20 T20 T20       # Alice closes 20 (marks past the close are not scored)
+T19 T19 T19       # Bob closes 19
+T20               # Alice scores on a number she has closed, Bob has not: +60
+T19               # Bob scores on 19: +57
+T18 T18 T18       # Alice closes 18
+T18 T18 T18       # Bob closes 18 - 18 is dead from here
+T17 T17 T17       # Alice closes 17
+T17 T17 T17       # Bob closes 17 - dead
+T16 T16 T16       # Alice closes 16
+T16 T16 T16       # Bob closes 16 - dead
+T15 T15 T15       # Alice closes 15
+T15 T15 T15       # Bob closes 15 - dead
+T19 T19 T19       # Alice closes 19 (dead already)
+board             # marks, points and the dead numbers
+T20 T20 T20       # Bob closes 20 (dead already)
+BULL BULL         # Alice closes the bull: all seven numbers, ahead on points
+averages
