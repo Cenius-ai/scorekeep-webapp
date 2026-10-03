@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scorekeep"
+version = "1.0.0"
+description = "Darts leg scorer for 301, 501 and cricket, with checkout routes and per-player three-dart averages."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+scorekeep = "scorekeep:main"
+
+[tool.setuptools]
+py-modules = ["scorekeep"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

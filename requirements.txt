@@ -1,0 +1,6 @@
+# Scorekeep has NO runtime dependencies: the shipped artifact is scorekeep.py,
+# which runs on Python 3.9+ with the standard library only.
+#
+# pytest is the dev/test runner used by `python3 -m pytest` and by install.sh's
+# self-check; it is not needed to score a leg.
+pytest==9.1.1

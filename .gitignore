@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files (Scorekeep reads NO secrets; only NO_COLOR is honoured)
+.env
+
+# Editors / OS
+.DS_Store
+*.swp
