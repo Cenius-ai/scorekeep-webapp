@@ -31,7 +31,7 @@ See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
 
 ## Architecture
 
-A self-contained Full-stack app project (26 files): top-level directories include `examples/`, `tests/`. Dependency management and data seeding are both handled by `./install.sh` — run it once, then start the server. Step-by-step setup guide: [`INSTALL.md`](INSTALL.md).
+A self-contained Full-stack app project (16 files): top-level directories include `examples/`, `tests/`. Dependency management and data seeding are both handled by `./install.sh` — run it once, then start the server. Step-by-step setup guide: [`INSTALL.md`](INSTALL.md).
 
 ## Features
 
